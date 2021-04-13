@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet'>
+</head>
+<body class="container-fluid d-flex flex-column justify-content-center px-0">
+    <nav class="navbar sticky-top">
+        <a id="brand" class="navbar-brand" href="#"><i class="fas fa-cloud-sun pr-1 ml-3"></i>Weather App</a>
+        <a id="currentCity" class="nav-item mr-3" href="#">Current City: San Antonio</a>
+    </nav>
+    <div id="search" class="d-flex justify-content-center align-items-center pt-5">
+        <input id="searchBar" type="text" placeholder="Find a city" class="" autocomplete="off">
+        <button id="submitSearch" class="btn btn-outline-brown">Search</button>
+    </div>
+    <div id="forecast" class="d-flex mx-auto justify-content-center mt-5 flex-wrap"></div>
+    <div id="map"></div>
+
+
+    <!--jQuery CDN-->
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous">
+    </script>
+    <!--FontAwesome CDN-->
+    <script src="https://kit.fontawesome.com/26d2d1eb84.js" crossorigin="anonymous"></script>
+    <!--API Keys-->
+    <script src="js/keys.js"></script>
+    <!--Geocode Helpers-->
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <!--MapBox API-->
+
+    <script src="js/weather.js"></script>
+</body>
+</html>

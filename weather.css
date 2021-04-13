@@ -1,0 +1,59 @@
+html{
+    width: 100vw;
+}
+body{
+    background-color: #f8f8ff;
+}
+input{
+    width: 15%;
+}
+button{
+    width: 10%;
+}
+nav{
+    background-color: #2C3346;
+    width: 100%;
+}
+.navbar-brand, .nav-item{
+    color: #f8f8ff;
+}
+.navbar-brand:hover, .nav-item:hover{
+    color: rgb(130, 115, 116);
+    text-decoration: none;
+}
+.btn-outline-brown{
+    border-color: rgb(130, 115, 116);
+    color: rgb(130, 115, 116);
+}
+.btn-outline-brown:hover{
+    background-color: rgb(130, 115, 116);
+    color: #fff;
+}
+.daycast{
+    border: 2px solid lightgray; 
+    border-radius: 5%;
+    max-height: 250px;
+    min-width: 325px;
+}
+#map{
+    position:relative;
+    bottom: 0;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 0;
+}
+canvas{
+    width: 100%;
+}
+input, button{
+    min-width: 150px;
+}
+/* canvas{
+    position: relative;
+    bottom:0;
+} */
+/* @media screen and (max-width: 500px){
+    .daycast{
+        flex-basis: 100%;
+    }
+} */
